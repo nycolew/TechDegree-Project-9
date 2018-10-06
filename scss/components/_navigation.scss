@@ -1,0 +1,73 @@
+// ================
+//    NAVIGATION
+// ================
+
+.side-nav {
+  background: $color-accent;
+  height: em(75px);
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  top: em(75px);
+  overflow-y: hidden;
+  padding: em(8px);
+
+  ul {
+    @include flexify($dir: row, $just: space-around);
+
+    @include mq(large) {
+      @include flexify($dir: column, $just: space-around);
+    }
+  }
+
+  svg {
+    width: em(30px);
+    height: auto;
+
+    path {
+      fill: $color-shade;
+    }
+
+    @include mq(medium) {
+      height: em(45px);
+      padding-bottom: em(20px);
+    }
+
+    @include mq(large) {
+      height: em(60px);
+    }
+  }
+
+  @include mq(large) {
+    height: 100%;
+    width: em(150px);
+    top: em(100px);
+    left: 0;
+    overflow-x: hidden;
+  }
+}
+
+svg.current {
+    path {
+      fill: $white;
+    }
+}
+
+
+// .side-nav {
+//   background: $color-accent;
+//   height: 100%;
+//   width: em(150px);
+//   position: fixed;
+//   z-index: 1;
+//   top: em(125px);
+//   left: 0;
+//   overflow-x: hidden;
+//   padding-top: em(20px);
+// }
+//
+// .side-nav svg {
+//   width: em(60px);
+//   height: auto;
+//   margin-top: em(40px);
+// }

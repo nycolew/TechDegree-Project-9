@@ -1,0 +1,84 @@
+// ============================
+//        BUTTONS
+// ============================
+
+.search-btn {
+  margin-right: em(10px);
+  background-color: $white;
+  margin-left: em(-5px);
+  height: em(35px);
+  border-left: none;
+  border-top: 2px solid $color-primary;
+  border-right: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+  vertical-align: bottom;
+  border-radius: 0 .4em .4em 0;
+  cursor: pointer;
+
+  @include mq(large) {
+      height: em(50px);
+  }
+}
+
+fieldset {
+  border: none;
+  margin: em(20px) em(20px) em(30px) 0;
+  width: 90%
+}
+
+@media(min-width: $brkpoint-md) {
+  fieldset {
+    width: 40%;
+    margin: em(20px) em(5px) em(30px) auto;
+  }
+}
+
+fieldset label {
+  outline: none !important;
+}
+
+.message-user {
+  button {
+    @extend %btn;
+    @extend %centered;
+    background: $color-secondary;
+    width: 85%;
+    cursor: pointer;
+  }
+}
+
+#settings {
+  input {
+    @extend %centered;
+    width: em(100px);
+  }
+
+  label {
+    @extend %centered;
+    width: em(100px);
+    padding-top: em(10px);
+  }
+}
+
+.save,
+.reset {
+  @extend %btn;
+  @extend %centered;
+  margin-bottom: em(25px);
+  width: 70%;
+  cursor: pointer;
+
+  @include mq(medium) {
+    width: 40%;
+  }
+}
+
+.save {
+  background: $color-secondary;
+  // margin-right: em(2px);
+}
+
+.reset {
+  background: $color-light;
+  // margin-left: em(2px);
+}

@@ -1,0 +1,76 @@
+//=======================
+//      CHARTS
+//=======================
+
+ canvas {
+   padding-left: em(20px);
+   padding-right: em(20px);
+   border-bottom: .5px solid lighten($color-text, 30%);
+   padding-bottom: em(35px);
+   width: 100%;
+
+   @include mq(medium) {
+     margin-left: auto;
+     margin-right: auto;
+     border-bottom: none;
+   }
+ }
+
+ #traffic,
+ #mobile {
+   @include mq(medium) {
+     border: $section-div;
+     width: 50%;
+     position: relative;
+     width: 50vw;
+     height: em(400px);
+   }
+ }
+
+#traffic canvas,
+#mobile canvas {
+  max-width: 60%;
+  max-height: 95%;
+}
+
+#traffic {
+  margin-left: 0;
+  margin-right: 0;
+
+  canvas {
+    @include mq(medium) {
+      max-width: 90%;
+      min-height: 80%;
+    }
+  }
+
+  @include mq(medium) {
+    border-top: $section-div;
+    border-right: none;
+    border-bottom: $section-div;
+    border-left: none;
+  }
+}
+
+#mobile {
+  margin-left: 0;
+  margin-right: 0;
+
+  canvas {
+    @include mq(medium) {
+      max-width: 60%;
+    }
+  }
+
+  @include mq(medium) {
+    border-top: $section-div;
+    border-right: none;
+    border-bottom: $section-div;
+    border-left: $section-div;
+  }
+}
+
+#barChart,
+#donutChart {
+  @extend %centered;
+}

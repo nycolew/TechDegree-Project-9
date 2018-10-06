@@ -1,0 +1,108 @@
+// ==================
+//      IMAGES
+// ==================
+
+.profile-pic {
+  border-radius: 50%;
+  width: em(40px);
+  height: em(40px);
+  margin-top: em(20px);
+  margin-right: em(8px);
+  margin-left: em(10px);
+
+  @include mq(large) {
+    width: em(60px);
+    height: em(60px);
+    margin-top: em(20px);
+    margin-right: em(15px);
+  }
+}
+
+.notifications {
+  height: em(45px);
+  width: auto;
+  padding-right: em(10px);
+  border-right: 1px solid $color-secondary;
+  padding-top: em(10px);
+  padding-bottom: em(10px);
+  margin-top: 10%;
+
+  @include mq(large) {
+    height: em(50px);
+    margin-top: em(30px);
+    padding-right: em(25px);
+  }
+}
+
+.lens {
+  fill: $color-accent;
+  width: em(12px);
+}
+
+.icon-background {
+  border-radius: 50%;
+  background-color: $color-hdln;
+  margin: em(10px);
+  width: em(150px);
+  height: em(150px);
+
+  @include mq(medium) {
+    width: em(90px);
+    height: em(90px);
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+#twitter,
+#google,
+#facebook {
+  svg {
+    background: transparent;
+    width: em(100px);
+    height: em(100px);
+    margin: em(10px);
+    padding-top: em(25px);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(medium) {
+      width: em(75px);
+      height: em(75px);
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    path {
+      fill: $color-light;
+    }
+  }
+}
+
+#twitter {
+  svg {
+    padding-top: em(35px);
+  }
+}
+
+.avatar-new {
+  @extend %avatar;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: em(10px);
+}
+
+.avatar-act {
+  @extend %avatar;
+  margin-left: -30px;
+
+  @include mq(medium) {
+    display: block;
+    // margin-left: em(15px);
+    margin-bottom: em(15px);
+    margin-top: em(15px);
+    margin-right: auto;
+  }
+}

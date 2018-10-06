@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HandyApp Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header id="header">
+      <span class="main-title">HandyApp&trade;</span>
+      <div class="header-right">
+        <svg class="notifications" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path d="M24 18v-8c0-5.5-4.5-10-10-10S4 4.5 4 10v8l-4 8h9.1c.5 2.3 2.5 4 4.9 4s4.4-1.7 4.9-4H28l-4-8zM14 28c-1.3 0-2.4-.8-2.8-2h5.6c-.4 1.2-1.5 2-2.8 2zM3 24l3-6v-8c0-4.4 3.6-8 8-8s8 3.6 8 8v8l3 6H3z" fill="#fff"/>
+        </svg>
+        <img class="profile-pic" src="images/profile-pic.jpg" alt="Nycole Walsh profile picture">
+        <span class="username">Nycole Walsh</span>
+      </div>
+    </header>
+
+    <nav class="side-nav">
+      <ul id="menu">
+        <li>
+          <a href="#top">
+            <svg class="current nav-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path d="M25 18c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-1-4h2v2h-2v-2zm1 12c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-1-4h2v2h-2v-2zm-7 4c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-1-4h2v2h-2v-2zM28 0H6C3.8 0 2 1.8 2 4v24c0 2.2 1.8 4 4 4h22c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zm2 28c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V8h26v20zm0-22H4V4c0-1.1.9-2 2-2h22c1.1 0 2 .9 2 2v2zM17 18c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-1-4h2v2h-2v-2zM9 26c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-1-4h2v2H8v-2zm1-4c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-1-4h2v2H8v-2z" fill="#fff"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#social-stats">
+            <svg class="nav-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path d="M18 16.4c1.3-1.7 2-3.9 2-6.4 0-5.5-4-10-9-10S2 4.5 2 10c0 2.4.8 4.6 2 6.4-2.3.8-4 3-4 5.6v4c0 3.3 2.7 6 6 6h10c3.3 0 6-2.7 6-6v-4c0-2.6-1.7-4.8-4-5.6zM4 10c0-4.4 3.1-8 7-8s7 3.6 7 8-3.1 8-7 8-7-3.6-7-8zm16 15.5c0 2.5-2.2 4.5-4.9 4.5H6.9C4.2 30 2 28 2 25.5v-3c0-2.1 1.6-3.9 3.8-4.4C7.2 19.3 9 20 11 20s3.8-.7 5.2-1.9c2.2.5 3.8 2.2 3.8 4.4v3zM23 8h8c.6 0 1-.4 1-1s-.4-1-1-1h-8c-.6 0-1 .4-1 1s.4 1 1 1zm8 16h-6c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1zm0-12h-8c-.6 0-1 .4-1 1s.4 1 1 1h8c.6 0 1-.4 1-1s-.4-1-1-1zm0 6h-6c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z" fill="#fff"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#traffic">
+            <svg class="nav-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path d="M14 0h-2c-1.1 0-2 .9-2 2v28c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 29c0 .6-.4 1-1 1s-1-.4-1-1V3c0-.6.4-1 1-1s1 .4 1 1v26zM4 9H2c-1.1 0-2 .9-2 2v19c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2V11c0-1.1-.9-2-2-2zm0 20c0 .6-.4 1-1 1s-1-.4-1-1V12c0-.6.4-1 1-1s1 .4 1 1v17zm20-13h-2c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2V18c0-1.1-.9-2-2-2zm0 13c0 .6-.4 1-1 1s-1-.4-1-1V19c0-.6.4-1 1-1s1 .4 1 1v10z" fill="#fff"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#settings">
+            <svg class="nav-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path d="M26 24H14.9c-.4-1.7-2-3-3.9-3s-3.4 1.3-3.9 3H6c-.6 0-1 .4-1 1s.4 1 1 1h1.1c.4 1.7 2 3 3.9 3s3.4-1.3 3.9-3H26c.6 0 1-.4 1-1s-.4-1-1-1zm-15 3.4c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4zM26 8H14.9c-.4-1.7-2-3-3.9-3S7.6 6.3 7.1 8H6c-.6 0-1 .4-1 1s.4 1 1 1h1.1c.4 1.7 2 3 3.9 3s3.4-1.3 3.9-3H26c.6 0 1-.4 1-1s-.4-1-1-1zm-15 3.4c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4zM26 16h-2.1c-.4-1.7-2-3-3.9-3s-3.4 1.3-3.9 3H6c-.6 0-1 .4-1 1s.4 1 1 1h10.1c.4 1.7 2 3 3.9 3s3.4-1.3 3.9-3H26c.6 0 1-.4 1-1s-.4-1-1-1zm-6 3.4c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4zM28 0H4C1.8 0 0 1.8 0 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zm2 28c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2v24z" fill="#fff"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+      <div class="container">
+      <main>
+        <section class="dashboard">
+          <div class="dashboard-bar">
+            <div class="dashboard-heading">
+              <h2>Dashboard</h2>
+            </div>
+            <div class="search-bar">
+              <form class="search" action="submit">
+                <input type="search" class="search-input" placeholder="Search...">
+                <button class="search-btn" type="submit">
+                  <svg class="lens" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451">
+                    <path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="alert">
+            <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Did you know that Theodore Roosevelt had a pet hyena named "Bill?" You do now, thanks to this handy alert!
+          </div>
+          <section>
+            <h3>Traffic</h3>
+            <fieldset>
+              <div class="switch-toggle switch-ios switch-candy-blue">
+                <input id="hourly" name="view" type="radio" checked>
+                <label for="hourly" onclick="">Hourly</label>
+
+                <input id="daily" name="view" type="radio">
+                <label for="daily" onclick="">Daily</label>
+
+                <input id="weekly" name="view" type="radio">
+                <label for="weekly" onclick="">Weekly</label>
+
+                <input id="monthly" name="view" type="radio">
+                <label for="monthly" onclick="">Monthly</label>
+
+                <a></a>
+              </div>
+            </fieldset>
+
+            <canvas id="lineChart"></canvas>
+          </section>
+
+          <div class="group-2">
+
+            <section id="traffic">
+              <h3>Daily Traffic</h3>
+              <canvas id="barChart"></canvas>
+            </section>
+
+            <section id="mobile">
+              <h3>Mobile Users</h3>
+              <canvas id="donutChart"></canvas>
+            </section>
+          </div>
+          <section id="social-stats">
+
+            <h3>Social Stats</h3>
+            <div class="group-social">
+              <div id="twitter">
+                <div class="icon-background">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                  <path fill="red" d="M32,3.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.8,0.8,24,0,22.2,0
+                  	c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,7.8,5.5,5.2,2.2,1.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
+                  	c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
+                  	c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7
+                  	c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"/>
+                  </svg>
+                </div>
+
+                <h4>Twitter
+                <span>10,345</span></h4>
+
+              </div>
+
+              <div id="facebook">
+              <div class="icon-background">
+                <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="green" d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+              </div>
+
+                <h4>Facebook
+                <span>8,739</span></h4>
+
+              </div>
+
+              <div id="google">
+                <div class="icon-background">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                  <path fill="blue" d="M17.7,25.7c0-0.3,0-0.5-0.1-0.8c-0.1-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.2-0.4-0.3-0.7c-0.2-0.2-0.3-0.4-0.4-0.6
+                  	c-0.1-0.2-0.3-0.3-0.5-0.6c-0.2-0.2-0.4-0.4-0.5-0.5c-0.1-0.1-0.3-0.3-0.6-0.5c-0.3-0.2-0.5-0.4-0.6-0.4s-0.3-0.2-0.6-0.4
+                  	c-0.3-0.2-0.5-0.4-0.6-0.4c-0.2,0-0.5,0-1,0c-0.7,0-1.4,0-2,0.1c-0.7,0.1-1.4,0.2-2.1,0.5c-0.7,0.2-1.3,0.5-1.9,0.9s-1,0.8-1.3,1.4
+                  	c-0.3,0.6-0.5,1.3-0.5,2.1c0,0.9,0.2,1.7,0.7,2.3c0.5,0.7,1.1,1.2,1.8,1.6s1.5,0.7,2.3,0.9s1.6,0.3,2.4,0.3c0.8,0,1.5-0.1,2.2-0.2
+                  	c0.7-0.2,1.3-0.4,1.9-0.8c0.6-0.3,1.1-0.8,1.4-1.4C17.5,27.2,17.7,26.5,17.7,25.7z M15.4,9.1c0-0.8-0.1-1.6-0.3-2.5
+                  	c-0.2-0.9-0.5-1.7-0.9-2.5c-0.4-0.8-0.9-1.5-1.6-2c-0.7-0.5-1.5-0.8-2.3-0.8c-1.2,0-2.1,0.4-2.8,1.3c-0.7,0.9-1,1.9-1,3.2
+                  	c0,0.6,0.1,1.2,0.2,1.9c0.1,0.7,0.4,1.3,0.7,2c0.3,0.7,0.7,1.3,1.1,1.8c0.4,0.5,0.9,1,1.5,1.3c0.6,0.3,1.2,0.5,1.9,0.5
+                  	c1.2,0,2.1-0.4,2.7-1.2C15.1,11.4,15.4,10.4,15.4,9.1z M12.9,0h8.4l-2.6,1.5h-2.6c0.9,0.6,1.6,1.4,2.1,2.4s0.8,2.1,0.8,3.2
+                  	c0,0.9-0.1,1.8-0.4,2.5c-0.3,0.7-0.7,1.3-1.1,1.8c-0.4,0.4-0.8,0.9-1.3,1.2c-0.4,0.4-0.8,0.8-1.1,1.2c-0.3,0.4-0.4,0.8-0.4,1.3
+                  	c0,0.3,0.1,0.7,0.3,1c0.2,0.3,0.5,0.6,0.8,0.9c0.3,0.3,0.7,0.6,1.1,0.9c0.4,0.3,0.8,0.7,1.2,1.1c0.4,0.4,0.8,0.8,1.1,1.3
+                  	c0.3,0.5,0.6,1,0.8,1.6c0.2,0.6,0.3,1.3,0.3,2c0,2.1-0.9,3.9-2.7,5.4c-1.9,1.7-4.6,2.5-8.1,2.5c-0.8,0-1.5-0.1-2.3-0.2
+                  	c-0.8-0.1-1.6-0.3-2.3-0.6c-0.8-0.3-1.5-0.7-2.1-1.1c-0.6-0.4-1.1-1-1.5-1.7C1,27.6,0.8,26.9,0.8,26c0-0.8,0.2-1.6,0.7-2.6
+                  	c0.4-0.8,1-1.5,1.8-2.1c0.8-0.6,1.8-1.1,2.8-1.4c1-0.3,2-0.5,3-0.7c0.9-0.1,1.9-0.2,2.9-0.3c-0.8-1.1-1.2-2-1.2-2.9
+                  	c0-0.2,0-0.3,0-0.5c0-0.1,0.1-0.3,0.1-0.4c0-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.1-0.3,0.1-0.4c-0.5,0.1-1,0.1-1.3,0.1
+                  	c-1.9,0-3.5-0.6-4.9-1.9c-1.4-1.3-2-2.8-2-4.7c0-1.8,0.6-3.4,1.8-4.8C6,1.7,7.5,0.8,9.3,0.4C10.5,0.1,11.7,0,12.9,0z M32.8,4.9v2.5
+                  	h-4.9v4.9h-2.5V7.4h-4.9V4.9h4.9V0h2.5v4.9H32.8z"/>
+                  </svg>
+                </div>
+
+                <h4>Google+
+                <span>2,530</span></h4>
+              </div>
+
+
+            </div>
+          </section>
+
+            <section class="row">
+              <div id="new-members">
+                <h3>New Members</h3>
+                <ul>
+                  <li class="member-listing">
+                    <div class="avatar-background">
+                      <img class="avatar-new" src="images/member-1.jpg" alt="Phoebe Caulfield profile picture">
+                    </div>
+                      <p class="info"><span class="name">Phoebe Caulfield</span><br>
+                        <a href="mailto:phoebecaulfield@example.com">phoebe.caulfield@example.com</a><br>
+                        <span class="date">09/25/2018</span>
+                      </p>
+                      <p class="date-lg">09/25/2018</p>
+                  </li>
+                  <li class="member-listing">
+                    <div class="avatar-background">
+                      <img class="avatar-new" src="images/member-2.jpg" alt="Kaz Brekker profile picture">
+                    </div>
+                    <p class="info"><span class="name">Kaz Brekker</span><br>
+                      <a href="mailto:kazbrekker@example.com">kazbrekker@example.com</a><br>
+                      <span class="date">09/26/2018</span>
+                    </p>
+                    <p class="date-lg">09/26/2018</p>
+                  </li>
+                  <li class="member-listing">
+                    <div class="avatar-background">
+                      <img class="avatar-new" src="images/member-3.jpg" alt="Hermione Granger profile picture">
+                    </div>
+                    <p class="info"><span class="name">Hermione Granger</span><br>
+                      <a href="mailto:hermionegranger@example.com">hermionegranger@example.com</a><br>
+                      <span class="date">09/25/2018</span>
+                    </p>
+                    <p class="date-lg">09/25/2018</p>
+                  </li>
+                  <li class="member-listing">
+                    <div class="avatar-background">
+                      <img class="avatar-new" src="images/member-4.jpg" alt="Henry DeTamble profile picture">
+                    </div>
+                    <p class="info"><span class="name">Henry DeTamble</span><br>
+                      <a href="mailto:henrydetamble@example.com">henrydetamble@example.com</a><br>
+                      <span class="date">09/27/2018</span>
+                    </p>
+                    <p class="date-lg">09/25/2018</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="recent-activity">
+                <h3>Recent Activity</h3>
+                <ul>
+                  <li class="activity">
+                    <div class="group-3">
+                      <img class="avatar-act" src="images/member-4.jpg" alt="Henry DeTamble profile picture">
+                      <span class="activity-feed"><strong>Henry DeTamble commented on your Reading Challenge 2018 post</strong>
+                      <br>4 hours ago</span>
+                      <span class="arrow">
+                        <a href="#">&rsaquo;</a>
+                      </span>
+                    </div>
+                  </li>
+                  <li class="activity">
+                    <div class="group-3">
+                      <img class="avatar-act" src="images/member-3.jpg" alt="Hermione Granger profile picture">
+                      <span class="activity-feed"><strong>Hermione Granger likes WizardCon 2018</strong>
+                      <br>9 hours ago</span>
+                      <span class="arrow">
+                        <a href="#">&rsaquo;</a>
+                      </span>
+                    </div>
+                  </li>
+                  <li class="activity">
+                    <div class="group-3">
+                      <img class="avatar-act" src="images/member-2.jpg" alt="Kaz Brekker profile picture">
+                      <span class="activity-feed"><strong>Kaz Brekker checked in at the Ice Court</strong>
+                      <br>1 hour ago</span>
+                      <span class="arrow">
+                        <a href="#">&rsaquo;</a>
+                      </span>
+                    </div>
+                  </li>
+                  <li class="activity">
+                    <div class="group-3">
+                      <img class="avatar-act" src="images/member-1.jpg" alt="Phoebe Caulfield profile picture">
+                      <span class="activity-feed"><strong>Phoebe Caulfield is now friends with Hermione Granger</strong>
+                      <br>7 hours ago</span>
+                      <span class="arrow">
+                        <a href="#">&rsaquo;</a>
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="row">
+              <div id="message-user">
+                <h3>Message User</h3>
+                <form class="message-user">
+                  <input type="text" placeholder="Search for User">
+                  <textarea rows="5" columns="1" placeholder="Message for User"></textarea>
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+
+              <div id="settings">
+                <form class="settings">
+                  <h3>Settings</h3>
+
+                  <div class="group">
+                  <p>
+                    Send Email Notifications
+                  </p>
+                  <div class="light-switch">
+                  <label class="switch-light switch-ios switch-candy" onclick="">
+                  <input class="switch" type="checkbox">
+                  <span>
+                    <span>Off</span>
+                    <span>On</span>
+                    <a></a>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="group">
+            <p>
+              Set Profile to Public
+            </p>
+            <div class="light-switch">
+            <label class="switch-light switch-ios switch-candy" onclick="">
+            <input class="switch" type="checkbox">
+            <span>
+              <span>Off</span>
+              <span>On</span>
+              <a></a>
+            </span>
+          </label>
+        </div>
+      </div>
+              <select name="timeZone">
+                <option value="" disabled selected>Select time zone</option>
+                <option value="atlantic">AST: Atlantic Standard Time</option>
+                <option value="eastern">EST: Eastern Standard Time</option>
+                <option value="central">CST: Central Standard Time</option>
+                <option value="mountain">MST: Mountain Standard Time</option>
+                <option value="pacific">PST: Pacific Standard Time</option>
+              </select>
+              <div class="group-2">
+                <button class="save" type="submit">Save</button>
+                <button class="reset" type="reset">Cancel</button>
+              </div>
+            </form>
+              </div>
+            </section>
+        </section>
+      </main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

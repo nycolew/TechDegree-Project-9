@@ -1,0 +1,64 @@
+//===============================
+// GLOBAL CONFIG
+//===============================
+
+
+// Colors
+
+$green-vogue            : #011f4b;
+$regal-blue             : #03396c;
+$bahama-blue            : #005b96;
+$hippie-blue            : #6497b1;
+$periwinkle-grey        : #b3cde0;
+$scooter                : #38a3d4;
+$jelly-bean             : #246287;
+$fedora                 : #757274;
+$white                  : #ffffff;
+$black                  : #000000;
+
+
+// Color Usage
+
+$color-primary             : $regal-blue;
+$color-secondary           : $bahama-blue;
+$color-light               : $periwinkle-grey;
+$color-accent              : $green-vogue;
+$color-shade               : $hippie-blue;
+$color-text                : $fedora;
+$color-hdln                : $regal-blue;
+$color-highlight           : $scooter;
+
+// Font Stacks
+
+$font-url--google       : 'https://fonts.googleapis.com/css?family=Anton|Montserrat:300,400,700';
+
+$font-family--primary   : 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-secondary  : 'Anton', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--thin  : 100;
+$font-weight--light : 300;
+$font-weight--medium: 400;
+$font-weight--bold  : 700;
+$font-weight--ultra : 900;
+
+// Text
+
+$base__font-size : 18px;
+$base__line: 26px;
+$letter-space: 1px;
+
+// Breakpoints
+
+$brkpoint-sm: 1px;
+$brkpoint-md: 768px;
+$brkpoint-lg: 1024px;
+
+// Border Radius
+
+$br-default: .3em;
+
+// Borders
+
+$section-div        : .5px solid lighten($color-text, 30%);

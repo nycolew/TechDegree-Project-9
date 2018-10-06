@@ -1,0 +1,127 @@
+// ====================
+//      TYPOGRAPHY
+// ====================
+
+.main-title {
+  font-family: $font-family-secondary;
+  color: $white;
+  text-shadow: 3px 3px 3px $color-text;
+  margin-left: em(20px);
+  padding-top: em(15px);
+  font-size: em(25px);
+  display: inline-block;
+
+  @include mq(large) {
+    font-size: em(50px);
+    padding-top: em(10px);
+  }
+}
+
+.username {
+  color: $white;
+  font-size: em(16px);
+  margin-top: em(35px);
+
+  @include mq(large) {
+    font-size: em(20px);
+  }
+}
+
+h2 {
+  color: $color-accent;
+  font-weight: $font-weight--medium;
+  font-size: em(18px);
+  background: $white;
+}
+
+h3 {
+  color: $color-text;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include mq(medium) {
+    text-align: left;
+    margin-left: em(15px);
+  }
+}
+
+#social-stats h4 {
+  color: $color-hdln;
+  font-size: em(26px);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: em(40px);
+
+  span {
+    display: block;
+    font-weight: $font-weight--thin;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-secondary;
+
+  &:visited {
+    color: $color-secondary;
+  }
+
+  &:hover {
+    color: $color-shade;
+  }
+}
+
+
+p.info {
+  color: $color-accent;
+  font-weight: $font-weight--bold;
+  font-size: em(12px);
+  text-align: center;
+  margin-bottom: em(5px);
+
+  @include mq(medium) {
+    font-size: em(16px);
+    text-align: left;
+    font-weight: $font-weight--medium;
+    line-height: 1.25;
+    margin-left: em(20px);
+    margin-right: auto;
+    margin-top: em(30px);
+  }
+}
+
+p.info a {
+  @include mq(medium) {
+    font-size: em(16px);
+  }
+}
+
+.name {
+  @include mq(medium) {
+    font-weight: $font-weight--bold;
+    color: darken($color-highlight, 10%);
+  }
+}
+
+.date {
+  font-weight: $font-weight--thin;
+  margin-bottom: em(30px);
+
+  @include mq(medium) {
+    display: none;
+  }
+}
+
+.group p {
+  max-width: em(175px);
+}
+
+#message-user h3 {
+  margin-left: em(35px);
+}
+
+#settings h3 {
+  margin-left: em(35px);
+}

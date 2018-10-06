@@ -1,0 +1,88 @@
+// ========================
+//        FORMS
+// ========================
+
+.search-bar {
+  @include flexify($dir: row, $just: flex-end);
+  background: lighten($color-text, 40%);
+  border-bottom: 1px solid $color-accent;
+  border-left: 1px solid $color-accent;
+}
+
+.search-input {
+  margin-top: em(10px);
+  margin-right: 0;
+  height: em(35px);
+  border-top: 2px solid $color-primary;
+  border-left: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+  border-right: 0;
+  vertical-align: bottom;
+  border-radius: .4em 0 0 .4em;
+
+  @include mq(large) {
+    width: em(400px);
+    height: em(50px);
+  }
+
+  ::placeholder {
+    font-size: em(20px);
+    color: $color-shade;
+  }
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.message-user {
+  @include flexify($dir: column);
+  border-bottom: $section-div;
+  padding-bottom: em(30px);
+
+  @include mq(medium) {
+    border-bottom: none;
+  }
+
+  input {
+    @extend %centered;
+    border-radius: $br-default;
+    background: lighten($color-secondary, 65%);
+    width: 85%;
+    outline: none;
+    border: 2px solid $color-shade;
+    margin-bottom: em(10px);
+  }
+
+  textarea {
+    @extend %centered;
+    border-radius: $br-default;
+    background: lighten($color-secondary, 65%);
+    width: 85%;
+    outline: none;
+    border: 2px solid $color-shade;
+    margin-bottom: em(10px);
+
+    @include mq(medium) {
+      height: em(200px);
+    }
+  }
+}
+
+.group {
+  @include flexify($dir: row, $just: center);
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.light-switch {
+  margin-left: em(10px);
+}
+
+select {
+  width: em(300px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

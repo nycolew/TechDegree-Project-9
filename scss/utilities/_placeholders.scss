@@ -1,0 +1,83 @@
+// ===================================
+//        PLACEHOLDERS
+// ===================================
+
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Centering Helpers
+
+%centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%center-text {
+  text-align: center;
+}
+
+// Avatars
+
+%avatar {
+  border-radius: 50%;
+  width: em(80px);
+  height: em(80px);
+}
+
+// Screen Reader Text
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Element Styling
+// ===================================
+
+
+// Headlines
+
+%hdln-prim {
+  font-weight: $font-weight--bold;
+  color: $color-primary;
+  font-family: $font-family--primary;
+  padding-left: em(10px);
+}
+
+
+// Buttons
+
+%btn {
+  color: $white;
+  text-transform: uppercase;
+  font-family: $font-family--primary;
+  font-size: em(22px);
+  border-radius: $br-default;
+  width: 100%;
+  padding: em(15px);
+  margin-top: em(22px);
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: .75;
+    }
+
+  &:active {
+    opacity: initial;
+  }
+}

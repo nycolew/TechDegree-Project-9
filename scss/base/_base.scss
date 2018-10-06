@@ -1,0 +1,21 @@
+// ==============================
+//        BASE STYLES
+// ==============================
+
+
+* {
+  box-sizing: border-box;
+  font-family: $font-family--primary;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-size: $base__font-size;
+  line-height: $base__line;
+  font-weight: $font-weight--light;
+  font-family: $font-family--primary;
+  color: $color-text;
+}

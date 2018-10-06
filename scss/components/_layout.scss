@@ -1,0 +1,261 @@
+// =========================
+//        LAYOUT
+// =========================
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(large) {
+    margin-left: em(150px);
+    margin-top: 0;
+  }
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $color-shade;
+  width: 100%;
+  height: em(75px);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  overflow-y: hidden;
+
+  @include mq(large) {
+    height: em(100px);
+  }
+}
+
+.header-right {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: em(8px);
+
+  @include mq(large) {
+    margin-right: em(75px);
+  }
+}
+
+.dashboard {
+  margin-top: em(150px);
+
+  @include mq(large) {
+    margin-top: em(100px);
+  }
+}
+
+.dashboard-heading {
+  padding: em(8px);
+}
+
+.dashboard-bar {
+  @include flexify($dir: row, $just: space-between);
+}
+
+.search-bar {
+  width: 85%;
+}
+
+.alert {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: em(20px);
+    border-radius: $br-default;
+    background-color: $color-primary;
+    color: white;
+    width: 90%;
+    height: em(80px);
+    text-align: center;
+    font-size: em(14px);
+    padding: em(10px);
+
+    @include mq(medium) {
+      font-size: em(16px);
+    }
+
+    @include mq(large) {
+      font-size: em(18px);
+      padding: em(20px);
+      height: em(50px);
+    }
+}
+
+.close-btn {
+    margin-right: em(5px);
+    margin-bottom: em(10px);
+    margin-top: em(2px);
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: $color-light;
+}
+
+#social-stats {
+  padding-top: em(30px);
+  padding-bottom: em(30px);
+  border-bottom: $section-div;
+}
+
+#twitter,
+#facebook,
+#google {
+  @include flexify($dir: row, $just: space-between);
+  background: $color-light;
+  border: .5px solid $color-shade;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: em(30px);
+  margin-bottom: em(30px);
+
+  @include mq(medium) {
+    width: auto;
+    padding: em(20px);
+  }
+}
+
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: $section-div;
+
+  @include mq(medium) {
+    @include flexify($dir: row, $just: center);
+  }
+}
+
+#new-members {
+  border-bottom: $section-div;
+
+  @include mq(medium) {
+    border-right: $section-div;
+  }
+}
+
+#new-members,
+#recent-activity {
+  @include mq(medium) {
+    flex-grow: 1;
+    width: 100%;
+    height: em(525px);
+  }
+}
+
+.activity {
+  @include flexify($dir: row, $just: space-around);
+  width: 100%;
+
+  span {
+    color: $color-accent;
+    font-weight: $font-weight--light;
+    font-size: em(14px);
+    margin-left: em(20px);
+    margin-right: em(8px);
+    margin-top: em(10px);
+    max-width: em(330px);
+
+    @include mq(medium) {
+      // margin: 0;
+      margin-left: em(8px);
+      margin-right: em(8px);
+      display: block;
+      max-width: em(300px);
+    }
+
+    a {
+      font-size: em(96px);
+      transition: .3s color ease-in;
+
+      &:hover {
+        color: $color-shade;
+      }
+    }
+  }
+
+  @include mq(medium) {
+    height: 25%;
+  }
+}
+
+p.date-lg {
+  display: none;
+
+  @include mq(medium) {
+    display: block;
+    margin-right: em(8px);
+    font-size: em(14px);
+  }
+}
+
+.member-listing,
+.activity {
+  @include mq(medium) {
+    @include flexify($dir: row, $just: space-around);
+    width: 100%;
+    border-bottom: $section-div;
+  }
+}
+
+ul {
+  @include mq(medium) {
+    padding: 0;
+  }
+}
+
+.member-listing:last-child,
+.activity:last-child {
+  border-bottom: none;
+}
+
+#message-user,
+#settings {
+  @include mq(medium) {
+    width: 100%;
+  }
+}
+
+#settings {
+  @include mq(medium) {
+    border-left: $section-div;
+  }
+}
+
+.group-2 {
+  @include mq(medium) {
+    @include flexify($dir: row, $just: center);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+.group-3 {
+  @include flexify($dir: row, $just: space-around);
+}
+
+.member-listing {
+  @include mq(medium) {
+    @include flexify($dir: row, $just: space-between);
+    padding-left: em(15px);
+    padding-bottom: em(15px);
+  }
+}
+
+.group-social {
+  @include mq(medium) {
+    @include flexify($dir: row, $just: space-around);
+  }
+}
