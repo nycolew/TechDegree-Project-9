@@ -52,6 +52,7 @@ var ct2 = document.getElementById('barChart');
 var myBarChart = new Chart(ct2, {
   type: 'bar',
   responsive: true,
+  maintainAspectRatio: false,
   data: {
     labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
     datasets: [{
@@ -100,3 +101,164 @@ $("#menu svg").click(function () {
 });
 
 });
+
+// Notifications Menu
+
+$("#notification-item").on("click", function() {
+  $('#dropdown').css({
+     'display': 'block',
+ });
+  });
+
+// Change graphs on toggle switch click
+
+const dataHourly = {
+    responsive: true,
+    type: 'line',
+    data: {
+        labels: ['','16-22', '23-39', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
+        datasets: [{
+            data: [0, 350, 1200, 780, 2200, 650, 1800, 2200, 2800, 500, 900, 1400],
+            lineTension: 0,
+            backgroundColor: 'rgba(179, 205, 224,0.4)',
+            borderColor: '#03396c',
+            pointBackgroundColor: '#b3cde0',
+            pointBorderColor: '#011f4b',
+            pointRadius: 7,
+            borderWidth: 2
+        }]
+    },
+    options: {
+        legend: {
+          display: false,
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:false
+                }
+            }],
+            xAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+        }
+    }
+};
+
+const dataDaily = {
+    responsive: true,
+    type: 'line',
+    data: {
+        labels: ['','16-22', '23-39', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
+        datasets: [{
+            data: [0, 225, 1030, 990, 1200, 770, 1200, 1000, 2200, 200, 700, 800],
+            lineTension: 0,
+            backgroundColor: 'rgba(179, 205, 224,0.4)',
+            borderColor: '#03396c',
+            pointBackgroundColor: '#b3cde0',
+            pointBorderColor: '#011f4b',
+            pointRadius: 7,
+            borderWidth: 2
+        }]
+    },
+    options: {
+        legend: {
+          display: false,
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:false
+                }
+            }],
+            xAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+        }
+    }
+};
+
+const dataWeekly = {
+    responsive: true,
+    type: 'line',
+    data: {
+        labels: ['','16-22', '23-39', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
+        datasets: [{
+            data: [0, 500, 850, 920, 2700, 340, 1200, 1200, 2400, 700, 300, 1800],
+            lineTension: 0,
+            backgroundColor: 'rgba(179, 205, 224,0.4)',
+            borderColor: '#03396c',
+            pointBackgroundColor: '#b3cde0',
+            pointBorderColor: '#011f4b',
+            pointRadius: 7,
+            borderWidth: 2
+        }]
+    },
+    options: {
+        legend: {
+          display: false,
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:false
+                }
+            }],
+            xAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+        }
+    }
+};
+
+const dataMonthly = {
+    responsive: true,
+    type: 'line',
+    data: {
+        labels: ['','16-22', '23-39', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
+        datasets: [{
+            data: [0, 250, 1900, 700, 2500, 900, 1100, 1900, 2300, 800, 100, 1900],
+            lineTension: 0,
+            backgroundColor: 'rgba(179, 205, 224,0.4)',
+            borderColor: '#03396c',
+            pointBackgroundColor: '#b3cde0',
+            pointBorderColor: '#011f4b',
+            pointRadius: 7,
+            borderWidth: 2
+        }]
+    },
+    options: {
+        legend: {
+          display: false,
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:false
+                }
+            }],
+            xAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+        }
+    }
+};
+
+
+$("#hourly").on("click", function() {
+     var context1 = document.querySelector('#lineChart').getContext('2d');
+    new Chart(context1).Line(dataHourly);
+  });
+
+  $("#daily").on("click", function() {
+       var context1 = document.querySelector('#lineChart').getContext('2d');
+      new Chart(context1).Line(dataDaily);
+    });

@@ -17,6 +17,7 @@
 
     @include mq(large) {
       @include flexify($dir: column, $just: space-around);
+      padding-left: em(45px);
     }
   }
 
@@ -52,22 +53,3 @@ svg.current {
       fill: $white;
     }
 }
-
-
-// .side-nav {
-//   background: $color-accent;
-//   height: 100%;
-//   width: em(150px);
-//   position: fixed;
-//   z-index: 1;
-//   top: em(125px);
-//   left: 0;
-//   overflow-x: hidden;
-//   padding-top: em(20px);
-// }
-//
-// .side-nav svg {
-//   width: em(60px);
-//   height: auto;
-//   margin-top: em(40px);
-// }

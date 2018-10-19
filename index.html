@@ -10,14 +10,27 @@
 
     <header id="header">
       <span class="main-title">HandyApp&trade;</span>
-      <div class="header-right">
-        <svg class="notifications" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+      <ul class="header-right">
+        <li id="notification-item"><svg class="notifications" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
           <path d="M24 18v-8c0-5.5-4.5-10-10-10S4 4.5 4 10v8l-4 8h9.1c.5 2.3 2.5 4 4.9 4s4.4-1.7 4.9-4H28l-4-8zM14 28c-1.3 0-2.4-.8-2.8-2h5.6c-.4 1.2-1.5 2-2.8 2zM3 24l3-6v-8c0-4.4 3.6-8 8-8s8 3.6 8 8v8l3 6H3z" fill="#fff"/>
-        </svg>
-        <img class="profile-pic" src="images/profile-pic.jpg" alt="Nycole Walsh profile picture">
-        <span class="username">Nycole Walsh</span>
-      </div>
+        </svg></li>
+        <li class="dot-item"><span class="dot"></span></li>
+        <li class="profile-pic-item"><img class="profile-pic" src="images/profile-pic.jpg" alt="Nycole Walsh profile picture"></li>
+        <li class="username-item"><span class="username">Nycole Walsh</span></li>
+      </ul>
     </header>
+
+    <ul id="dropdown">
+      <li class="update">
+        <p>New in your feed: your mother was a hamster and your father smelt of elderberries.</p>
+      </li>
+      <li class="update">
+        <p>Reminder: you have an event coming up tomorrow. But let's be real, you'll probably stay home instead and rewatch old episodes of "Fraggle Rock."</p>
+      </li>
+      <li class="update">
+        <p>Update: Hermione Granger commented on your post.</p>
+      </li>
+    </ul>
 
     <nav class="side-nav">
       <ul id="menu">

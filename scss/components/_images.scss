@@ -4,17 +4,16 @@
 
 .profile-pic {
   border-radius: 50%;
-  width: em(40px);
-  height: em(40px);
-  margin-top: em(20px);
-  margin-right: em(8px);
+  width: em(35px);
+  height: em(35px);
   margin-left: em(10px);
+  margin-bottom: em(20px);
 
   @include mq(large) {
     width: em(60px);
     height: em(60px);
-    margin-top: em(20px);
-    margin-right: em(15px);
+  //   margin-top: em(20px);
+  //   margin-right: em(15px);
   }
 }
 
@@ -22,15 +21,14 @@
   height: em(45px);
   width: auto;
   padding-right: em(10px);
-  border-right: 1px solid $color-secondary;
   padding-top: em(10px);
   padding-bottom: em(10px);
   margin-top: 10%;
 
   @include mq(large) {
-    height: em(50px);
-    margin-top: em(30px);
-    padding-right: em(25px);
+    height: em(55px);
+  //   margin-top: em(30px);
+  //   padding-right: em(25px);
   }
 }
 
@@ -105,4 +103,9 @@
     margin-top: em(15px);
     margin-right: auto;
   }
+}
+
+.profile-pic-item {
+  border-left: 1px solid $color-accent;
+  margin-left: 0;
 }

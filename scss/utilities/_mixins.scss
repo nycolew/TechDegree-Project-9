@@ -39,6 +39,12 @@
     }
   }
 
+  @else if $break == "mdlarge" {
+    @media(min-width: $brkpoint-mdlg) {
+      @content;
+    }
+  }
+
   @else {
     @error "'#{$break}' is not a valid entry."
   }

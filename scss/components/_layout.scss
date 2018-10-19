@@ -35,6 +35,11 @@
   justify-content: flex-end;
   margin-right: em(8px);
 
+  li {
+    // margin-left: em(15px);
+    cursor: pointer;
+  }
+
   @include mq(large) {
     margin-right: em(75px);
   }
@@ -78,12 +83,17 @@
       font-size: em(16px);
     }
 
+    @include mq(mdlarge) {
+      height: em(60px);
+    }
+
     @include mq(large) {
-      font-size: em(18px);
+      font-size: em(16px);
       padding: em(20px);
-      height: em(50px);
+      // height: em(75px);
     }
 }
+
 
 .close-btn {
     margin-right: em(5px);
@@ -124,6 +134,10 @@
     width: auto;
     padding: em(20px);
   }
+
+  @include mq(large) {
+    padding: em(20px) em(55px);
+  }
 }
 
 .row {
@@ -135,6 +149,12 @@
   @include mq(medium) {
     @include flexify($dir: row, $just: center);
   }
+
+  &:last-of-type {
+    @include mq(medium) {
+      border-bottom: none;
+    }
+  }
 }
 
 #new-members {
@@ -142,6 +162,10 @@
 
   @include mq(medium) {
     border-right: $section-div;
+  }
+
+  @include mq(large) {
+    border-bottom: none;
   }
 }
 
@@ -257,5 +281,59 @@ ul {
 .group-social {
   @include mq(medium) {
     @include flexify($dir: row, $just: space-around);
+  }
+}
+
+.activity-feed {
+
+  @include mq(medium) {
+    padding-left: em(40px);
+  }
+
+}
+
+.arrow {
+
+  @include mq(medium) {
+    padding-left: em(20px);
+  }
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: lighten($emerald, 15%);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -15px;
+  margin-bottom: -5px;
+}
+
+#dropdown {
+  background-color: $white;
+  position: absolute;
+  font-color: $color-accent;
+  font-size: em(12px);
+  border: 2px solid $scooter;
+  width: 90vw;
+  margin-top: 65px;
+  height: auto;
+  z-index: 5000;
+  margin-left: em(40px);
+  margin-right: em(40px);
+  display: none;
+  padding-left: em(10px);
+  padding-right: em(10px);
+
+  li {
+    border-bottom: $section-div;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  @include mq(medium) {
+    width: 60vh;
   }
 }

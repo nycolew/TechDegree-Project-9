@@ -29,8 +29,10 @@
 
 #traffic canvas,
 #mobile canvas {
-  max-width: 60%;
-  max-height: 95%;
+  // max-width: 60%;
+  // max-height: 95%;
+  max-height: 75%;
+  max-width: 100%;
 }
 
 #traffic {
@@ -41,6 +43,7 @@
     @include mq(medium) {
       max-width: 90%;
       min-height: 80%;
+      max-height: 90%;
     }
   }
 
@@ -49,6 +52,7 @@
     border-right: none;
     border-bottom: $section-div;
     border-left: none;
+    min-width: 45%;
   }
 }
 
@@ -58,7 +62,16 @@
 
   canvas {
     @include mq(medium) {
+      // max-width: 60%;
+      max-width: 75%;
+    }
+
+    @include mq(large) {
       max-width: 60%;
+    }
+
+    @media(min-width: 1285px) {
+      max-width: 50%;
     }
   }
 
@@ -67,6 +80,7 @@
     border-right: none;
     border-bottom: $section-div;
     border-left: $section-div;
+    min-width: 45%;
   }
 }
 

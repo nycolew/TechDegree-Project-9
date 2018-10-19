@@ -27,6 +27,16 @@
   }
 }
 
+.username-item {
+  margin-top: em(10px);
+  margin-bottom: em(10px);
+  margin-left: em(15px);
+
+  @include mq(large) {
+    padding-top: em(10px);
+  }
+}
+
 h2 {
   color: $color-accent;
   font-weight: $font-weight--medium;
