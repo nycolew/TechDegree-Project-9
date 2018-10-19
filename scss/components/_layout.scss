@@ -22,7 +22,7 @@
   position: fixed;
   z-index: 100;
   top: 0;
-  overflow-y: hidden;
+  // overflow-y: hidden;
 
   @include mq(large) {
     height: em(100px);
@@ -312,15 +312,17 @@ ul {
 #dropdown {
   background-color: $white;
   position: absolute;
-  font-color: $color-accent;
+  color: $color-accent;
   font-size: em(12px);
   border: 2px solid $scooter;
   width: 90vw;
-  margin-top: 65px;
+  // margin-top: 65px;
   height: auto;
   z-index: 5000;
-  margin-left: em(40px);
-  margin-right: em(40px);
+  top: 53px;
+  right: 0;
+  // margin-left: em(40px);
+  // margin-right: em(40px);
   display: none;
   padding-left: em(10px);
   padding-right: em(10px);
@@ -336,4 +338,8 @@ ul {
   @include mq(medium) {
     width: 60vh;
   }
+}
+
+#notification-item {
+  position: relative;
 }

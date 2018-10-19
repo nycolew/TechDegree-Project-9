@@ -23,7 +23,11 @@
   padding-right: em(10px);
   padding-top: em(10px);
   padding-bottom: em(10px);
-  margin-top: 10%;
+  // margin-top: 10%;
+  position: absolute;
+  // top: 22px;
+  right: 0;
+  z-index: -100;
 
   @include mq(large) {
     height: em(55px);

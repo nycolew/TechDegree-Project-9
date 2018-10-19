@@ -560,7 +560,6 @@ p {
   position: fixed;
   z-index: 100;
   top: 0;
-  overflow-y: hidden;
 }
 @media (min-width: 1024px) {
   #header {
@@ -874,15 +873,14 @@ p.date-lg {
 #dropdown {
   background-color: #ffffff;
   position: absolute;
-  font-color: #011f4b;
+  color: #011f4b;
   font-size: 0.6666666667em;
   border: 2px solid #38a3d4;
   width: 90vw;
-  margin-top: 65px;
   height: auto;
   z-index: 5000;
-  margin-left: 2.2222222222em;
-  margin-right: 2.2222222222em;
+  top: 53px;
+  right: 0;
   display: none;
   padding-left: 0.5555555556em;
   padding-right: 0.5555555556em;
@@ -897,6 +895,10 @@ p.date-lg {
   #dropdown {
     width: 60vh;
   }
+}
+
+#notification-item {
+  position: relative;
 }
 
 .main-title {
@@ -1791,7 +1793,9 @@ svg.current path {
   padding-right: 0.5555555556em;
   padding-top: 0.5555555556em;
   padding-bottom: 0.5555555556em;
-  margin-top: 10%;
+  position: absolute;
+  right: 0;
+  z-index: -100;
 }
 @media (min-width: 1024px) {
   .notifications {

@@ -104,11 +104,12 @@ $("#menu svg").click(function () {
 
 // Notifications Menu
 
-$("#notification-item").on("click", function() {
-  $('#dropdown').css({
-     'display': 'block',
- });
+$('#notification-item').on("click", function() {
+  $('#dropdown').toggle();
+  $('.dot').css({
+    'display': 'none'
   });
+});
 
 // Change graphs on toggle switch click
 
