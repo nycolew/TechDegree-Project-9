@@ -279,10 +279,12 @@
             <section class="row">
               <div id="message-user">
                 <h3>Message User</h3>
-                <form class="message-user">
-                  <input type="text" placeholder="Search for User">
-                  <textarea rows="5" columns="1" placeholder="Message for User"></textarea>
-                  <button type="submit">Send</button>
+                <form class="message-user" autocomplete="off">
+                  <div class="autocomplete">
+                    <input id="userSearch" type="text" placeholder="Search for User">
+                  </div>
+                  <textarea id="messageBody" rows="5" columns="1" placeholder="Message for User"></textarea>
+                  <button id="messageSend" type="submit">Send</button>
                 </form>
               </div>
 

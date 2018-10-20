@@ -179,7 +179,7 @@
 }
 
 .activity {
-  @include flexify($dir: row, $just: space-around);
+  // @include flexify($dir: row, $just: space-around);
   width: 100%;
 
   span {
@@ -189,15 +189,17 @@
     margin-left: em(20px);
     margin-right: em(8px);
     margin-top: em(10px);
-    max-width: em(330px);
+    // max-width: em(330px);
 
     @include mq(medium) {
       // margin: 0;
-      margin-left: em(8px);
-      margin-right: em(8px);
+      margin-left: em(20px);
+      margin-right: em(15px);
       display: block;
-      max-width: em(300px);
+      font-size: em(16px);
+      // max-width: em(300px);
     }
+
 
     a {
       font-size: em(96px);
@@ -224,8 +226,23 @@ p.date-lg {
   }
 }
 
-.member-listing,
 .activity {
+  @include mq(medium) {
+    width: 100%;
+    border-bottom: $section-div;
+  }
+}
+
+// .member-listing,
+// .activity {
+//   @include mq(medium) {
+//     @include flexify($dir: row, $just: space-around);
+//     width: 100%;
+//     border-bottom: $section-div;
+//   }
+// }
+
+.member-listing {
   @include mq(medium) {
     @include flexify($dir: row, $just: space-around);
     width: 100%;
@@ -285,9 +302,9 @@ ul {
 }
 
 .activity-feed {
-
+  width: 65%;
   @include mq(medium) {
-    padding-left: em(40px);
+    // padding-left: em(40px);
   }
 
 }
@@ -295,7 +312,12 @@ ul {
 .arrow {
 
   @include mq(medium) {
-    padding-left: em(20px);
+    padding-left: em(40px);
+    padding-right: 0;
+  }
+
+  @include mq(large) {
+    padding-left: em(75px);
   }
 }
 

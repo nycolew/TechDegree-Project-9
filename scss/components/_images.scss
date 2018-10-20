@@ -98,14 +98,13 @@
 
 .avatar-act {
   @extend %avatar;
-  margin-left: -30px;
+  margin-left: em(10px);
 
   @include mq(medium) {
     display: block;
     // margin-left: em(15px);
     margin-bottom: em(15px);
     margin-top: em(15px);
-    margin-right: auto;
   }
 }
 
