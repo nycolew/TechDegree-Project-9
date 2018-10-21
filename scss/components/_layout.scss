@@ -233,15 +233,6 @@ p.date-lg {
   }
 }
 
-// .member-listing,
-// .activity {
-//   @include mq(medium) {
-//     @include flexify($dir: row, $just: space-around);
-//     width: 100%;
-//     border-bottom: $section-div;
-//   }
-// }
-
 .member-listing {
   @include mq(medium) {
     @include flexify($dir: row, $just: space-around);

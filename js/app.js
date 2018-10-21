@@ -124,6 +124,7 @@ $('#notification-item').on("click", function() {
   });
 });
 
+
 // Toggle Line Chart
 
 function changeChart(chart, labels, data) {
@@ -218,3 +219,74 @@ document.addEventListener("click", function (e) {
 autocomplete(document.getElementById("userSearch"), listUsers);
 
 // Message Sent Confirmation
+
+function messageSubmit() {
+  const searchUser = document.getElementById("userSearch").value;
+  const userMsg = document.getElementById("messageBody").value;
+  if (searchUser == null || searchUser == "" || searchUser == "Search for User") {
+    alert("Please select a user");
+    return false;
+  }
+  if (userMsg == null || userMsg == "" || userMsg == "Message for User") {
+    alert("Please include a message");
+    return false;
+  }
+
+  if (userMsg && searchUser != null || userMsg && searchUser != "") {
+    alert("Your message has been sent!")
+  }
+}
+
+
+$('#messageSend').on('click', function() {
+  messageSubmit();
+  $('#userSearch').val('');
+  $('#messageBody').val('');
+});
+
+// Save Settings to Local Storage
+
+const emailSettings = document.getElementById("emailSettings");
+const profileSettings = document.getElementById("profileSettings");
+const timeZone = document.getElementById("timeZone");
+const setEmail = localStorage.getItem('emailSettings');
+const setProfile = localStorage.getItem('profileSettings');
+const setTimeZone = localStorage.getItem('timeZone');
+
+const storeData = function() {
+
+  if (setEmail !== null) {
+    emailSettings.checked = (setEmail === 'true');
+  }
+
+  if (setProfile !== null) {
+    profileSettings.checked = (setProfile === 'true');
+  }
+
+  if (setTimeZone !== null) {
+    timeZone.value = setTimeZone;
+
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+
+
+
+  document.getElementById("saveSettings").addEventListener("click", function() {
+    localStorage.setItem('emailSettings', emailSettings.checked);
+    localStorage.setItem('profileSettings', profileSettings.checked);
+    localStorage.setItem('timeZone', timeZone.value);
+    alert('Your preferences have been saved');
+  });
+
+document.getElementById("cancelSettings").addEventListener("click", function() {
+    const cancel = confirm('Continue without saving?');
+
+    if (cancel) {
+      storeData();
+    }
+  });
+
+  storeData();
+});

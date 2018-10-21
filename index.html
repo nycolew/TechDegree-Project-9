@@ -298,7 +298,7 @@
                   </p>
                   <div class="light-switch">
                   <label class="switch-light switch-ios switch-candy" onclick="">
-                  <input class="switch" type="checkbox">
+                  <input id="emailSettings" class="switch" type="checkbox" name="emailSettings">
                   <span>
                     <span>Off</span>
                     <span>On</span>
@@ -314,7 +314,7 @@
             </p>
             <div class="light-switch">
             <label class="switch-light switch-ios switch-candy" onclick="">
-            <input class="switch" type="checkbox">
+            <input id="profileSettings" class="switch" type="checkbox" name="profileSettings">
             <span>
               <span>Off</span>
               <span>On</span>
@@ -323,7 +323,7 @@
           </label>
         </div>
       </div>
-              <select name="timeZone">
+              <select id="timeZone" name="timeZone">
                 <option value="" disabled selected>Select time zone</option>
                 <option value="atlantic">AST: Atlantic Standard Time</option>
                 <option value="eastern">EST: Eastern Standard Time</option>
@@ -332,8 +332,8 @@
                 <option value="pacific">PST: Pacific Standard Time</option>
               </select>
               <div class="group-2">
-                <button class="save" type="submit">Save</button>
-                <button class="reset" type="reset">Cancel</button>
+                <button id="saveSettings" class="save" type="submit">Save</button>
+                <button id="cancelSettings" class="reset" type="reset">Cancel</button>
               </div>
             </form>
               </div>
