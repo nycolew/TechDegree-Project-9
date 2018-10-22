@@ -42,6 +42,11 @@ h2 {
   font-weight: $font-weight--medium;
   font-size: em(18px);
   background: $white;
+  margin-left: em(15px);
+
+  @include mq(medium) {
+    font-size: em(22px);
+  }
 }
 
 h3 {
@@ -115,14 +120,14 @@ p.info a {
   }
 }
 
-.date {
-  font-weight: $font-weight--thin;
-  margin-bottom: em(30px);
-
-  @include mq(medium) {
-    display: none;
-  }
-}
+// .date {
+//   font-weight: $font-weight--thin;
+//   margin-bottom: em(30px);
+//
+//   @include mq(medium) {
+//     display: none;
+//   }
+// }
 
 .group p {
   max-width: em(175px);
@@ -134,4 +139,21 @@ p.info a {
 
 #settings h3 {
   margin-left: em(35px);
+}
+
+.activity-feed {
+  color: darken($color-highlight, 10%);
+  font-size: em(12px);
+
+  @include mq(medium) {
+    font-size: em(14px);
+  }
+
+  @include mq(large) {
+    font-size: em(16px);
+  }
+}
+
+.date-lg {
+  font-size: em(14px);
 }

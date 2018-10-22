@@ -91,16 +91,16 @@
             <fieldset>
               <div class="switch-toggle switch-ios switch-candy-blue">
                 <input id="hourly" name="view" type="radio" checked>
-                <label for="hourly" onclick="">Hourly</label>
+                <label class="graph-toggle" for="hourly" onclick="">Hourly</label>
 
                 <input id="daily" name="view" type="radio">
-                <label for="daily" onclick="">Daily</label>
+                <label class="graph-toggle" for="daily" onclick="">Daily</label>
 
                 <input id="weekly" name="view" type="radio">
-                <label for="weekly" onclick="">Weekly</label>
+                <label class="graph-toggle" for="weekly" onclick="">Weekly</label>
 
                 <input id="monthly" name="view" type="radio">
-                <label for="monthly" onclick="">Monthly</label>
+                <label class="graph-toggle" for="monthly" onclick="">Monthly</label>
 
                 <a></a>
               </div>
@@ -234,7 +234,7 @@
                 <h3>Recent Activity</h3>
                 <ul>
                   <li class="activity">
-                    <div class="group-3">
+                    <div class="activity-group">
                       <img class="avatar-act" src="images/member-4.jpg" alt="Henry DeTamble profile picture">
                       <span class="activity-feed"><strong>Henry DeTamble commented on your Reading Challenge 2018 post</strong>
                       <br>4 hours ago</span>
@@ -244,7 +244,7 @@
                     </div>
                   </li>
                   <li class="activity">
-                    <div class="group-3">
+                    <div class="activity-group">
                       <img class="avatar-act" src="images/member-3.jpg" alt="Hermione Granger profile picture">
                       <span class="activity-feed"><strong>Hermione Granger likes WizardCon 2018</strong>
                       <br>9 hours ago</span>
@@ -254,7 +254,7 @@
                     </div>
                   </li>
                   <li class="activity">
-                    <div class="group-3">
+                    <div class="activity-group">
                       <img class="avatar-act" src="images/member-2.jpg" alt="Kaz Brekker profile picture">
                       <span class="activity-feed"><strong>Kaz Brekker checked in at the Ice Court</strong>
                       <br>1 hour ago</span>
@@ -264,7 +264,7 @@
                     </div>
                   </li>
                   <li class="activity">
-                    <div class="group-3">
+                    <div class="activity-group">
                       <img class="avatar-act" src="images/member-1.jpg" alt="Phoebe Caulfield profile picture">
                       <span class="activity-feed"><strong>Phoebe Caulfield is now friends with Hermione Granger</strong>
                       <br>7 hours ago</span>
@@ -297,8 +297,8 @@
                     Send Email Notifications
                   </p>
                   <div class="light-switch">
-                  <label class="switch-light switch-ios switch-candy" onclick="">
-                  <input id="emailSettings" class="switch" type="checkbox" name="emailSettings">
+                  <label class="graph-toggle switch-light switch-ios switch-candy" onclick="">
+                  <input id="emailSettings" class="graph-toggle switch" type="checkbox" name="emailSettings">
                   <span>
                     <span>Off</span>
                     <span>On</span>
@@ -313,8 +313,8 @@
               Set Profile to Public
             </p>
             <div class="light-switch">
-            <label class="switch-light switch-ios switch-candy" onclick="">
-            <input id="profileSettings" class="switch" type="checkbox" name="profileSettings">
+            <label class="graph-toggle switch-light switch-ios switch-candy" onclick="">
+            <input id="profileSettings" class="graph-toggle switch" type="checkbox" name="profileSettings">
             <span>
               <span>Off</span>
               <span>On</span>

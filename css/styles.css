@@ -529,6 +529,7 @@ template {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 p {
@@ -716,69 +717,57 @@ p {
     border-right: 0.5px solid #c1bfc0;
   }
 }
-@media (min-width: 1024px) {
-  #new-members {
-    border-bottom: none;
-  }
-}
 
 @media (min-width: 769px) {
   #new-members,
 #recent-activity {
-    flex-grow: 1;
-    width: 100%;
-    height: 29.1666666667em;
+    width: 50%;
+    border-bottom: none;
   }
+}
+
+.activity-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (min-width: 769px) {
+  .activity-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.activity-feed {
+  padding-left: 0.8333333333em;
+  padding-right: 0.8333333333em;
+  padding-top: 0.5555555556em;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .activity {
-  width: 100%;
-}
-.activity span {
-  color: #011f4b;
-  font-weight: 300;
-  font-size: 0.7777777778em;
-  margin-left: 1.1111111111em;
-  margin-right: 0.4444444444em;
-  margin-top: 0.5555555556em;
-}
-@media (min-width: 769px) {
-  .activity span {
-    margin-left: 1.1111111111em;
-    margin-right: 0.8333333333em;
-    display: block;
-    font-size: 0.8888888889em;
-  }
-}
-.activity span a {
-  font-size: 5.3333333333em;
-  transition: 0.3s color ease-in;
-}
-.activity span a:hover {
-  color: #6497b1;
+  padding-left: 1.6666666667em;
+  padding-right: 1.6666666667em;
 }
 @media (min-width: 769px) {
   .activity {
-    height: 25%;
-  }
-}
-
-p.date-lg {
-  display: none;
-}
-@media (min-width: 769px) {
-  p.date-lg {
-    display: block;
-    margin-right: 0.4444444444em;
-    font-size: 0.7777777778em;
+    padding-left: 0.8333333333em;
+    padding-right: none;
   }
 }
 
 @media (min-width: 769px) {
-  .activity {
-    width: 100%;
+  .activity,
+.member-listing {
     border-bottom: 0.5px solid #c1bfc0;
   }
+}
+
+.activity:last-of-type,
+.member-listing:last-of-type {
+  border-bottom: none;
 }
 
 @media (min-width: 769px) {
@@ -786,20 +775,32 @@ p.date-lg {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
-    border-bottom: 0.5px solid #c1bfc0;
+    padding-left: 0.8333333333em;
   }
 }
 
 @media (min-width: 769px) {
-  ul {
-    padding: 0;
+  .date {
+    display: none;
   }
 }
 
-.member-listing:last-child,
-.activity:last-child {
-  border-bottom: none;
+.date-lg {
+  display: none;
+}
+@media (min-width: 769px) {
+  .date-lg {
+    display: block;
+    margin-right: 0.8333333333em;
+  }
+}
+
+.arrow {
+  padding-left: 0.8333333333em;
+  padding-right: 0.4444444444em;
+}
+.arrow a {
+  font-size: 68px;
 }
 
 @media (min-width: 769px) {
@@ -833,35 +834,10 @@ p.date-lg {
 }
 
 @media (min-width: 769px) {
-  .member-listing {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0.8333333333em;
-    padding-bottom: 0.8333333333em;
-  }
-}
-
-@media (min-width: 769px) {
   .group-social {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
-}
-
-.activity-feed {
-  width: 65%;
-}
-@media (min-width: 769px) {
-  .arrow {
-    padding-left: 2.2222222222em;
-    padding-right: 0;
-  }
-}
-@media (min-width: 1024px) {
-  .arrow {
-    padding-left: 4.1666666667em;
   }
 }
 
@@ -949,6 +925,12 @@ h2 {
   font-weight: 400;
   font-size: 1em;
   background: #ffffff;
+  margin-left: 0.8333333333em;
+}
+@media (min-width: 769px) {
+  h2 {
+    font-size: 1.2222222222em;
+  }
 }
 
 h3 {
@@ -1020,16 +1002,6 @@ p.info {
   }
 }
 
-.date {
-  font-weight: 100;
-  margin-bottom: 1.6666666667em;
-}
-@media (min-width: 769px) {
-  .date {
-    display: none;
-  }
-}
-
 .group p {
   max-width: 9.7222222222em;
 }
@@ -1040,6 +1012,25 @@ p.info {
 
 #settings h3 {
   margin-left: 1.9444444444em;
+}
+
+.activity-feed {
+  color: #2787b2;
+  font-size: 0.6666666667em;
+}
+@media (min-width: 769px) {
+  .activity-feed {
+    font-size: 0.7777777778em;
+  }
+}
+@media (min-width: 1024px) {
+  .activity-feed {
+    font-size: 0.8888888889em;
+  }
+}
+
+.date-lg {
+  font-size: 0.7777777778em;
 }
 
 .side-nav {
@@ -1867,15 +1858,22 @@ svg.current path {
   margin-right: auto;
   margin-top: 0.5555555556em;
 }
+@media (min-width: 769px) {
+  .avatar-new {
+    margin-bottom: 0.5555555556em;
+  }
+}
 
 .avatar-act {
   margin-left: 0.5555555556em;
+  margin-bottom: 0.5555555556em;
 }
 @media (min-width: 769px) {
   .avatar-act {
     display: block;
-    margin-bottom: 0.8333333333em;
-    margin-top: 0.8333333333em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5555555556em;
   }
 }
 
@@ -1952,6 +1950,10 @@ fieldset label {
 
 .reset {
   background: #b3cde0;
+}
+
+.graph-toggle {
+  cursor: pointer;
 }
 
 .search-bar {
