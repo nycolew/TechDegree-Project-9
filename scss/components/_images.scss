@@ -12,8 +12,6 @@
   @include mq(large) {
     width: em(60px);
     height: em(60px);
-  //   margin-top: em(20px);
-  //   margin-right: em(15px);
   }
 }
 
@@ -23,16 +21,12 @@
   padding-right: em(10px);
   padding-top: em(10px);
   padding-bottom: em(10px);
-  // margin-top: 10%;
   position: absolute;
-  // top: 22px;
   right: 0;
   z-index: 1;
 
   @include mq(large) {
     height: em(55px);
-  //   margin-top: em(30px);
-  //   padding-right: em(25px);
   }
 }
 
@@ -107,9 +101,14 @@
 
   @include mq(medium) {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin-left: em(15px);
     margin-top: em(10px);
+  }
+
+  @include mq(large) {
+    margin-left: em(15px);
   }
 }
 

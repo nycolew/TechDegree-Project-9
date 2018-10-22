@@ -29,8 +29,6 @@
 
 #traffic canvas,
 #mobile canvas {
-  // max-width: 60%;
-  // max-height: 95%;
   max-height: 75%;
   max-width: 100%;
 }
@@ -62,7 +60,6 @@
 
   canvas {
     @include mq(medium) {
-      // max-width: 60%;
       max-width: 75%;
     }
 

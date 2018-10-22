@@ -27,10 +27,8 @@ var myLineChart = new Chart(ct1, {
     type: 'line',
     data: {
         labels: hourlyLabels,
-        // labels: ['','16-22', '23-39', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
         datasets: [{
             data: hourlyData,
-            // data: [0, 350, 1200, 780, 2200, 650, 1800, 2200, 2800, 500, 900, 1400],
             lineTension: 0,
             backgroundColor: 'rgba(179, 205, 224,0.4)',
             borderColor: '#03396c',
@@ -148,7 +146,7 @@ clickToggle($('#monthly'), monthlyLabels, monthlyData);
 
 // Message User Autocomplete
 
-const listUsers = ['Henry DeTamble', 'Hermione Granger', 'Kaz Brekker', 'Nycole Walsh', 'Phoebe Caulfield'];
+const listUsers = ['Henry DeTamble', 'Hermione Granger', 'Jesse Custer', 'Katina Choovanski', 'Kaz Brekker', 'Nycole Walsh', 'Phoebe Caulfield', 'Takeshi Kovacs'];
 
 function autocomplete(inp, arr) {
   var currentFocus;

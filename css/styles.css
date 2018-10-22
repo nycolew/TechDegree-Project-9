@@ -745,6 +745,12 @@ p {
   padding-top: 0.5555555556em;
   margin-top: auto;
   margin-bottom: auto;
+  display: block;
+}
+@media (min-width: 769px) {
+  .activity-feed {
+    width: 22.2222222222em;
+  }
 }
 
 .activity {
@@ -754,7 +760,7 @@ p {
 @media (min-width: 769px) {
   .activity {
     padding-left: 0.8333333333em;
-    padding-right: none;
+    padding-right: 0;
   }
 }
 
@@ -1877,9 +1883,13 @@ svg.current path {
 @media (min-width: 769px) {
   .avatar-act {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0.8333333333em;
     margin-top: 0.5555555556em;
+  }
+}
+@media (min-width: 1024px) {
+  .avatar-act {
+    margin-left: 0.8333333333em;
   }
 }
 

@@ -22,7 +22,6 @@
   position: fixed;
   z-index: 100;
   top: 0;
-  // overflow-y: hidden;
 
   @include mq(large) {
     height: em(100px);
@@ -36,7 +35,6 @@
   margin-right: em(8px);
 
   li {
-    // margin-left: em(15px);
     cursor: pointer;
   }
 
@@ -90,7 +88,6 @@
     @include mq(large) {
       font-size: em(16px);
       padding: em(20px);
-      // height: em(75px);
     }
 }
 
@@ -157,102 +154,6 @@
   }
 }
 
-// #new-members {
-//   border-bottom: $section-div;
-//
-//   @include mq(medium) {
-//     border-right: $section-div;
-//   }
-//
-//   @include mq(large) {
-//     border-bottom: none;
-//   }
-// }
-//
-// #new-members,
-// #recent-activity {
-//   @include mq(medium) {
-//     flex-grow: 1;
-//     width: 100%;
-//     height: em(525px);
-//   }
-// }
-//
-// .activity {
-//   // @include flexify($dir: row, $just: space-around);
-//   width: 100%;
-//
-//   span {
-//     color: $color-accent;
-//     font-weight: $font-weight--light;
-//     font-size: em(14px);
-//     margin-left: em(20px);
-//     margin-right: em(8px);
-//     margin-top: em(10px);
-//     max-width: em(400px);
-//
-//     @include mq(medium) {
-//       // margin: 0;
-//       margin-left: em(20px);
-//       margin-right: em(15px);
-//       display: block;
-//       font-size: em(16px);
-//       // max-width: em(300px);
-//     }
-//
-//
-//     a {
-//       font-size: em(96px);
-//       transition: .3s color ease-in;
-//
-//       &:hover {
-//         color: $color-shade;
-//       }
-//     }
-//   }
-//
-//   @include mq(medium) {
-//     height: 25%;
-//     border-bottom: $section-div;
-//   }
-// }
-//
-// p.date-lg {
-//   display: none;
-//
-//   @include mq(medium) {
-//     display: block;
-//     margin-right: em(8px);
-//     font-size: em(14px);
-//   }
-// }
-//
-// .activity {
-//   @include mq(medium) {
-//     width: 100%;
-//     border-bottom: $section-div;
-//   }
-// }
-//
-// .member-listing {
-//   @include mq(medium) {
-//     @include flexify($dir: row, $just: space-around);
-//     width: 100%;
-//     border-bottom: $section-div;
-//   }
-// }
-//
-// ul {
-//   @include mq(medium) {
-//     padding: 0;
-//   }
-// }
-//
-// .member-listing:last-child,
-// .activity:last-child {
-//   border-bottom: none;
-// }
-
 #new-members {
   border-bottom: $section-div;
 
@@ -283,6 +184,11 @@
   padding-top: em(10px);
   margin-top: auto;
   margin-bottom: auto;
+  display: block;
+
+  @include mq(medium) {
+    width: em(400px);
+  }
 }
 
 .activity {
@@ -291,7 +197,7 @@
 
   @include mq(medium) {
     padding-left: em(15px);
-    padding-right: none;
+    padding-right: 0;
   }
 }
 
@@ -367,31 +273,11 @@
   @include flexify($dir: row, $just: space-around);
 }
 
-// .member-listing {
-//   @include mq(medium) {
-//     @include flexify($dir: row, $just: space-between);
-//     padding-left: em(15px);
-//     padding-bottom: em(15px);
-//   }
-// }
-
 .group-social {
   @include mq(medium) {
     @include flexify($dir: row, $just: space-around);
   }
 }
-
-// .arrow {
-//
-//   @include mq(medium) {
-//     padding-left: em(40px);
-//     padding-right: 0;
-//   }
-//
-//   @include mq(large) {
-//     padding-left: em(75px);
-//   }
-// }
 
 .dot {
   height: 6px;
