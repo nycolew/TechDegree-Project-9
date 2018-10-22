@@ -853,14 +853,16 @@ p {
 
 #dropdown {
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   color: #011f4b;
   font-size: 0.6666666667em;
   border: 2px solid #38a3d4;
   width: 90vw;
   height: auto;
   z-index: 5000;
-  top: 53px;
+  top: 69px;
+  left: 0;
+  margin: 0 auto;
   right: 0;
   display: none;
   padding-left: 0.5555555556em;
@@ -875,6 +877,10 @@ p {
 @media (min-width: 769px) {
   #dropdown {
     width: 60vh;
+    top: 53px;
+    position: absolute;
+    left: inherit;
+    margin: inherit;
   }
 }
 
@@ -1791,7 +1797,7 @@ svg.current path {
   padding-bottom: 0.5555555556em;
   position: absolute;
   right: 0;
-  z-index: -100;
+  z-index: 1;
 }
 @media (min-width: 1024px) {
   .notifications {

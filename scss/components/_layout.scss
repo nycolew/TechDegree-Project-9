@@ -405,14 +405,16 @@
 
 #dropdown {
   background-color: $white;
-  position: absolute;
+  position: fixed;
   color: $color-accent;
   font-size: em(12px);
   border: 2px solid $scooter;
   width: 90vw;
   height: auto;
   z-index: 5000;
-  top: 53px;
+  top: 69px;
+  left: 0;
+  margin: 0 auto;
   right: 0;
   display: none;
   padding-left: em(10px);
@@ -428,6 +430,10 @@
 
   @include mq(medium) {
     width: 60vh;
+    top: 53px;
+    position: absolute;
+    left: inherit;
+    margin: inherit;
   }
 }
 
